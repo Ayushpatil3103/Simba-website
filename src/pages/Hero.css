@@ -1,3 +1,8 @@
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+
 .navbar-custom {
   background: rgba(0, 0, 0, 0.3); /* transparent navbar over image */
 }
@@ -26,7 +31,7 @@
 
 .section-title {
   font-size: 2.8rem;
-  color: #F36B21;
+  color: black;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -50,6 +55,7 @@
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin-bottom: 20px;
+   font-family: 'Anton', sans-serif;
 }
 
 .counter-box h3 {
@@ -58,6 +64,7 @@
   font-weight: bold;
   font-weight: 700;
   margin-bottom: 10px;
+   font-family: 'Anton', sans-serif;
 }
 
 .counter-box p {
@@ -70,9 +77,9 @@
   padding: 100px 0;
 }
 
-.section-title {
+ .projects-section .section-title {
   font-size: 2.8rem;
-  color: #F36B21;
+  color: rgb(234, 114, 2);
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -127,7 +134,7 @@
   
 
 .africa-section {
-  padding: 100px 0;
+  padding: 40px 0;
   position: relative;
   z-index: 1;
 }

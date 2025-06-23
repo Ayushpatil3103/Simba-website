@@ -1,14 +1,16 @@
-import React from 'react';
-import './news.css';
+import React from "react";
+import "./news.css";
 
-import news1 from '../assets/simba-files/news-01.jpg';
-import news2 from '../assets/simba-files/news-02.jpg';
-import news3 from '../assets/simba-files/news-03.jpg';
+import news1 from "../assets/simba-files/news-01.jpg";
+import news2 from "../assets/simba-files/news-02.jpg";
+import news3 from "../assets/simba-files/news-03.jpg";
 
 function NewsSection() {
   return (
     <div className="news-section container">
-      <h2 className="section-title">news, announcements <br /> and press releases.</h2>
+      <h2 className="section-title" id="bew">
+        news, announcements <br /> and press releases.
+      </h2>
 
       <div className="news-container">
         {/* Left Featured News */}
@@ -20,7 +22,8 @@ function NewsSection() {
           <div className="featured-bottom">
             <div className="featured-date">29 Aug, 2023</div>
             <div className="featured-title">
-              Prime Minister Kassim Majaliwa Strengthens Bilateral Ties During Official Visit to Africab Group
+              Prime Minister Kassim Majaliwa Strengthens Bilateral Ties During
+              Official Visit to Africab Group
             </div>
           </div>
         </div>
@@ -33,7 +36,9 @@ function NewsSection() {
               <div className="small-date">29 Aug, 2023</div>
             </div>
             <div className="small-title">
-              Prime Minister Kassim Majaliwa Strengthens Bilateral Ties During Official Visit to Africab Group
+              <div className="small-date">29 Aug, 2023</div>
+              Prime Minister Kassim Majaliwa Strengthens Bilateral Ties During
+              Official Visit to Africab Group
             </div>
           </div>
 
@@ -43,7 +48,8 @@ function NewsSection() {
               <div className="small-date">29 Aug, 2023</div>
             </div>
             <div className="small-title">
-              Prime Minister Kassim Majaliwa Strengthens Bilateral Ties During Official Visit to Africab Group
+              Prime Minister Kassim Majaliwa Strengthens Bilateral Ties During
+              Official Visit to Africab Group
             </div>
           </div>
         </div>

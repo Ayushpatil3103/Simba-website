@@ -9,7 +9,7 @@ import infrastructureIcon from '../assets/simba-files/civil.png';
 
 function Projects() {
   return (
-    <div className="projects-section container">
+    <div className="projects-section container" id='projects'>
       <div className="row align-items-center">
         {/* Left Content */}
         <div className="col-md-4 text-content">

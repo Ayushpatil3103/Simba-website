@@ -1,0 +1,89 @@
+.about-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.welcome-bg-text {
+  position: absolute;
+  font-size: 7rem;
+  color: rgba(0, 0, 0, 0.05);
+  top: 30px;
+  left: 15px;
+  z-index: -1;
+  font-weight: 900;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  border-bottom: 2px solid #F36B21;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.explore-link:hover {
+  color: #F36B21;
+}
+
+.stats-section {
+  margin-top: 30px;
+}
+
+.stat-box {
+  margin-bottom: 40px;
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+   font-family: 'Anton', sans-serif;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.stat-box p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 200px;
+  height: 3px;
+  background-color: #F36B21;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .welcome-bg-text {
+    font-size: 4rem;
+    top: 20px;
+  }
+  .main-heading {
+    font-size: 1.5rem;
+  }
+  .stat-box {
+    margin-bottom: 20px;
+  }
+}

@@ -1,45 +1,47 @@
 import React from 'react';
-import './Hero.css';
+import './Aboutsection.css';
 
-function About() {
+const About = () => {
   return (
-    <div className="about-section container">
+    <div className="about-section container" id='about'>
       <div className="row align-items-center">
-        {/* Left Side - Content */}
-        <div className="col-md-6 text-content">
-          <h2 className="section-title">Who We Are</h2>
-          <p className="section-description">
-            Simba Infrastructure brings expertise, innovation, and dedication to infrastructure development projects. 
-            Our mission is to contribute towards Africa’s rapid growth by delivering high quality projects that empower communities.
+        
+        <div className="col-md-6 text-section">
+          <h1 className="welcome-bg-text">welcome</h1>
+          <h2 className="main-heading">Making homes accessible to one and all in Tanzania.</h2>
+          <p className="description">
+            At Simba Developer, we prioritize doing the right things, the right way, for the right reasons. 
+            Guided by strong ethics, we aim to be a successful, sustainable, and responsible company in Tanzania.
+            Integrity and transparency shape our decisions, while a culture of honesty fosters positive relationships 
+            with our customers, suppliers, and communities.
           </p>
+          <a href="#" className="explore-link">continue exploring</a>
         </div>
 
-        {/* Right Side - 4 Counters */}
-        <div className="col-md-6 counters-grid">
+        <div className="col-md-6 stats-section">
           <div className="row">
-            <div className="col-6 counter-box">
+            <div className="col-6 stat-box">
               <h3>2005</h3>
-              <p>Year of incorporation</p>
+              <p>Year of Incorporation</p>
             </div>
-            <div className="col-6 counter-box">
+            <div className="col-6 stat-box">
               <h3>700+</h3>
-              <p>Motivated employees</p>
+              <p>Motivated Employees</p>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-6 counter-box">
+            <div className="col-6 stat-box">
               <h3>40+</h3>
-              <p>Projects executed</p>
+              <p>Projects Executed</p>
             </div>
-            <div className="col-6 counter-box">
+            <div className="col-6 stat-box">
               <h3>80+</h3>
               <p>High-tech Machinery</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-  );
+  )
 }
 
 export default About;

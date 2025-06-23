@@ -4,7 +4,7 @@ import simbaAfrica from '../assets/simba-files/footer-logo.png';  // your center
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id='footer'>
       <div className="container footer-container">
         <div className="footer-links">
           <h5>PROJECTS UNDERTAKEN</h5>

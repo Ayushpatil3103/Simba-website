@@ -8,6 +8,9 @@ import PartnersSection from './pages/Partner';
 import NewsSection from './pages/News';
 import Footer from './pages/Footer';
 import Stats from './pages/Stats';
+import '@fontsource/anton';
+import '@fontsource/urbanist';
+
 function App() {
   return (
     <div className="App">

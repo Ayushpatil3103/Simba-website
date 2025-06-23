@@ -5,14 +5,29 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <div className="hero-container" style={{ 
-      backgroundImage: `url(${Landing})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      height: '100vh'
-    }}>
-      <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div 
+      className="hero-container" 
+      style={{ 
+        backgroundImage: `url(${Landing})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '100vh',
+        position: 'relative',
+        color: 'white'
+      }}
+    >
+      <nav 
+        className="navbar navbar-expand-lg navbar-dark navbar-custom" 
+ style={{ 
+  background: 'linear-gradient(to right, rgba(0, 0, 0, 0), rgba(249, 115, 22, 0.3), rgba(208, 87, 0, 0.6),rgb(207, 62, 0))',
+  position: 'absolute', 
+  width: '100%', 
+  zIndex: 10 
+}}
+
+
+      >
         <div className="container">
           <a className="navbar-brand fw-bold" href="#">
             <img src={simba} alt="Logo" id='logo' />
@@ -24,31 +39,42 @@ function Hero() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="#">Home</a>
+                <a className="nav-link active" href="#Home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Projects Undertaken</a>
+                <a className="nav-link" href="#projects">Projects Undertaken</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Services Offered</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Who We Are</a>
+                <a className="nav-link" href="#about">Who We Are</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">News and Media</a>
+                <a className="nav-link" href="#bew">News and Media</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact us</a>
+                <a className="nav-link" href="#footer">Contact us</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div className="hero-overlay">
-       
+      {/* Overlay Text */}
+      <div 
+        style={{ 
+          position: 'absolute', 
+          top: '50%', 
+          left: '50%', 
+          transform: 'translate(-50%, -50%)', 
+          textAlign: 'center',
+          zIndex: 5
+        }}
+      >
+   
       </div>
+
     </div>
   )
 }
