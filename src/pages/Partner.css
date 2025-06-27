@@ -1,0 +1,66 @@
+/* Main section container */
+.partners-section {
+  padding: 60px 20px;
+}
+
+/* Section title */
+.partners-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Logos row */
+.logos-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Each logo */
+.partner-logo {
+  flex: 0 1 calc(20% - 20px); /* 5 in a row with spacing */
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .partner-logo {
+    flex: 0 1 calc(33.33% - 20px); /* 3 in a row */
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-logo {
+    flex: 0 1 calc(50% - 20px); /* 2 in a row */
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-logo {
+    flex: 0 1 100%; /* 1 per row */
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+}

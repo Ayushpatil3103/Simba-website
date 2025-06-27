@@ -3,23 +3,28 @@ import './Aboutsection.css';
 
 const About = () => {
   return (
+    <div className='ss'>
     <div className="about-section container" id='about'>
       <div className="row align-items-center">
         
         <div className="col-md-6 text-section">
           <h1 className="welcome-bg-text">welcome</h1>
           <h2 className="main-heading">Making homes accessible to one and all in Tanzania.</h2>
-          <p className="description">
-            At Simba Developer, we prioritize doing the right things, the right way, for the right reasons. 
-            Guided by strong ethics, we aim to be a successful, sustainable, and responsible company in Tanzania.
-            Integrity and transparency shape our decisions, while a culture of honesty fosters positive relationships 
-            with our customers, suppliers, and communities.
-          </p>
-          <br></br>
-          
-          <a href="#" className="explore-link">Continue Exploring</a>
-          <br></br>
-          <br></br>
+
+    <div className="description-container">
+  <p className="description">
+    At Simba Developer, we prioritize doing the right things, the right way, for the right reasons. 
+    Guided by strong ethics, we aim to be a successful, sustainable, and responsible company in Tanzania.
+    Integrity and transparency shape our decisions, while a culture of honesty fosters positive relationships 
+    with our customers, suppliers, and communities.
+  </p>
+<br></br>
+  <div className="explore-link-container">
+    <a href="#" className="explore-link">Continue Exploring</a>
+  </div>
+</div>
+
+
         </div>
 
         <div className="col-md-6 stats-section">
@@ -45,6 +50,7 @@ const About = () => {
 
       </div>
     </div>
+  </div> 
   )
 }
 

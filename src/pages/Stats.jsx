@@ -8,46 +8,65 @@ import img4 from '../assets/simba-files/project-landing.jpg';
 
 function Stats() {
   return (
-    <div className="projects-section container">
-      <h2 className="projects-title">
-        Completion of projects in a time frame, Continuous human resources development, and a strong commitment to client satisfaction.
-      </h2>
+    <div className="stats-section">
+      <div className="background-title">featured projects</div>
 
-      <div className="projects-grid">
-        {/* Project 1 */}
-        <div className="project-card">
-          <img src={img1} alt="Blue Ocean" />
-          <div className="project-overlay">
-            <div className="category">RESIDENTIAL</div>
-            <div className="project-title">BLUE OCEAN RESIDENCY <br /> ZANZIBAR</div>
+      <div className="stats-wrapper">
+        <h2 className="section-title">
+          Completion of projects in a time frame, Continuous human resources development, and a strong commitment to client satisfaction.
+        </h2>
+
+        <div className="projects-grid">
+          {/* Card 1 */}
+          <div className="project-card">
+            <img src={img1} alt="Blue Ocean" />
+            <div className="overlay">
+              <div className="nav-button prev">← PREV</div>
+
+              <div className="category">RESIDENTIAL</div>
+              <div className="project-info">
+                <h4>BLUE OCEAN RESIDENCY</h4>
+                <p>ZANZIBAR</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Project 2 */}
-        <div className="project-card">
-          <img src={img2} alt="Champwani Island" />
-          <div className="project-overlay">
-            <div className="category">RESIDENTIAL</div>
-            <div className="project-title">CHAMPWANI ISLAND <br /> ZANZIBAR</div>
-            <div className="corner-icon">🔎</div>
+          {/* Card 2 */}
+          <div className="project-card">
+            <img src={img2} alt="Champwani" />
+            <div className="overlay">
+              <div className="category">RESIDENTIAL</div>
+              <div className="project-info">
+                <h4>CHAMPWANI ISLAND</h4>
+                <p>ZANZIBAR</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Project 3 */}
-        <div className="project-card">
-          <img src={img3} alt="Old Town" />
-          <div className="project-overlay">
-            <div className="category">CIVIL</div>
-            <div className="project-title">RESTORATION OF <br /> OLD TOWN & MARKET <br /> DARAJANI, ZANZIBAR</div>
+          {/* Card 3 */}
+          <div className="project-card">
+            <img src={img3} alt="Old Town" />
+            <div className="overlay">
+              <div className="category">CIVIL</div>
+              <div className="project-info">
+                <h4>RESTORATION OF OLD TOWN & MARKET</h4>
+                <p>DARAJANI, ZANZIBAR</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Project 4 */}
-        <div className="project-card">
-          <img src={img4} alt="Africab" />
-          <div className="project-overlay">
-            <div className="category">COMMERCIAL</div>
-            <div className="project-title">AFRICAB BUSINESS PARK <br /> DAR ES SALAAM, TANZANIA</div>
+          {/* Card 4 */}
+          <div className="project-card">
+            <img src={img4} alt="Africab" />
+            <div className="overlay">
+              <div className="nav-button next">NEXT →</div>
+
+              <div className="category">COMMERCIAL</div>
+              <div className="project-info">
+                <h4>AFRICAB BUSINESS PARK</h4>
+                <p>DAR ES SALAAM, TANZANIA</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

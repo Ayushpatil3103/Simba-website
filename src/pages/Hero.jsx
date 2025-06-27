@@ -9,50 +9,25 @@ function Hero() {
   className="hero-container"
   style={{ backgroundImage: `url(${Landing})` }}
 >
+<a href="#home" className="logo-container">
+  <img src={simba} alt="Simba Logo" className="hero-logo" />
+</a>
 
-      <nav 
-        className="navbar navbar-expand-lg navbar-dark navbar-custom" 
- style={{ 
-  background: 'linear-gradient(to right, rgba(0, 0, 0, 0), rgba(249, 115, 22, 0.3), rgba(208, 87, 0, 0.6),rgb(207, 62, 0))',
-  position: 'absolute', 
-  width: '100%', 
-  zIndex: 10 
-}}
+     <nav className="custom-navbar">
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#projects">PROJECTS UNDERTAKEN</a></li>
+    <li><a href="#services">SERVICES OFFERED</a></li>
+    <li><a href="#about">WHO WE ARE</a></li>
+    <li><a href="#news">NEW & MEDIA</a></li>
+    <li><a href="#contact">CONTACT US</a></li>
+  </ul>
+</nav>
 
-
-      >
-        <div className="container">
-          <a className="navbar-brand fw-bold" href="#">
-            <img src={simba} alt="Logo" id='logo' />
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link active" href="#Home">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">Projects Undertaken</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Services Offered</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">Who We Are</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#bew">News and Media</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#footer">Contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<div className="slider-controls">
+  <button className="slider-btn">← Prev</button>
+  <button className="slider-btn">Next →</button>
+</div>
 
       {/* Overlay Text */}
     
