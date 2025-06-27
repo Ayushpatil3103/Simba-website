@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Simba-website/static/css/main.922932b5.css",
-    "main.js": "/Simba-website/static/js/main.8a02c7ab.js",
+    "main.css": "/Simba-website/static/css/main.a21be166.css",
+    "main.js": "/Simba-website/static/js/main.f71b5987.js",
     "static/js/453.b21a91d2.chunk.js": "/Simba-website/static/js/453.b21a91d2.chunk.js",
     "static/media/hero-banner.jpg": "/Simba-website/static/media/hero-banner.8001b9426ad9cc306d70.jpg",
     "static/media/map-art.png": "/Simba-website/static/media/map-art.c8b6a1ca5bcf24953bae.png",
@@ -34,12 +34,12 @@
     "static/media/urbanist-latin-ext-400-normal.woff2": "/Simba-website/static/media/urbanist-latin-ext-400-normal.676789d83a767e8ba07a.woff2",
     "static/media/anton-vietnamese-400-normal.woff": "/Simba-website/static/media/anton-vietnamese-400-normal.f2305933f9c3232917b6.woff",
     "index.html": "/Simba-website/index.html",
-    "main.922932b5.css.map": "/Simba-website/static/css/main.922932b5.css.map",
-    "main.8a02c7ab.js.map": "/Simba-website/static/js/main.8a02c7ab.js.map",
+    "main.a21be166.css.map": "/Simba-website/static/css/main.a21be166.css.map",
+    "main.f71b5987.js.map": "/Simba-website/static/js/main.f71b5987.js.map",
     "453.b21a91d2.chunk.js.map": "/Simba-website/static/js/453.b21a91d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.922932b5.css",
-    "static/js/main.8a02c7ab.js"
+    "static/css/main.a21be166.css",
+    "static/js/main.f71b5987.js"
   ]
 }
