@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Urbanist', sans-serif;
 }
@@ -20,6 +21,24 @@ body {
   color: white;
   text-align: center;
 }
+.hero-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* or center if needed */
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 100dvh; /* better for mobile browser viewport */
+  }
+}
+
 
 .hero-title {
   font-size: 3rem;
@@ -133,51 +152,7 @@ body {
 }
   
 
-.africa-section {
-  padding: 40px 0;
-  position: relative;
-  z-index: 1;
-}
 
-.image-container {
-  text-align: right;
-  position: relative;
-  z-index: 2; /* bring map above */
-}
-
-.africa-map {
-  width: 100%;
-  max-width: 550px;
-  position: relative;
-  z-index: 2;
-}
-
-.text-container {
-  position: relative;
-  z-index: 1;
-  margin-left: -80px; /* overlap the image */
-}
-
-.speech-bubble {
-  background:#D9541A;
-  color: white;
-  padding: 40px 40px 60px 40px;
-  
-  position: relative;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-
-.speech-bubble::after {
-  content: "";
-  position: absolute;
-  bottom: -40px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  border-top: 40px solid #D9541A;
-  border-right: 40px solid transparent;
-}
 
 .speech-bubble h2 {
   font-size: 2rem;
@@ -197,11 +172,12 @@ body {
   padding: 80px 0;
 }
 
- .partners-section .section-title {
+.partners-section .section-title {
   font-size: 2.5rem;
   color: black;
   font-weight: 700;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .logos-row {
@@ -216,5 +192,49 @@ body {
   max-height: 80px;
   max-width: 150px;
   object-fit: contain;
+  flex: 1 1 120px;
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .partners-section {
+    padding: 60px 20px;
+  }
+
+  .partners-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .logos-row {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .partner-logo {
+    max-width: 120px;
+    max-height: 70px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .partners-section {
+    padding: 40px 15px;
+  }
+
+  .partners-section .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .logos-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .partner-logo {
+    max-width: 100px;
+    max-height: 60px;
+  }
+}

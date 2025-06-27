@@ -15,7 +15,11 @@ const About = () => {
             Integrity and transparency shape our decisions, while a culture of honesty fosters positive relationships 
             with our customers, suppliers, and communities.
           </p>
-          <a href="#" className="explore-link">continue exploring</a>
+          <br></br>
+          
+          <a href="#" className="explore-link">Continue Exploring</a>
+          <br></br>
+          <br></br>
         </div>
 
         <div className="col-md-6 stats-section">

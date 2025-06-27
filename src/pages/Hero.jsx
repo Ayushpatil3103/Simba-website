@@ -5,18 +5,11 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <div 
-      className="hero-container" 
-      style={{ 
-        backgroundImage: `url(${Landing})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        position: 'relative',
-        color: 'white'
-      }}
-    >
+   <div
+  className="hero-container"
+  style={{ backgroundImage: `url(${Landing})` }}
+>
+
       <nav 
         className="navbar navbar-expand-lg navbar-dark navbar-custom" 
  style={{ 
@@ -62,18 +55,7 @@ function Hero() {
       </nav>
 
       {/* Overlay Text */}
-      <div 
-        style={{ 
-          position: 'absolute', 
-          top: '50%', 
-          left: '50%', 
-          transform: 'translate(-50%, -50%)', 
-          textAlign: 'center',
-          zIndex: 5
-        }}
-      >
-   
-      </div>
+    
 
     </div>
   )

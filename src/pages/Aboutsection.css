@@ -17,12 +17,14 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .description {
   font-size: 1rem;
   color: #555;
   line-height: 1.7;
+  text-align: left;
 }
 
 .explore-link {
@@ -82,8 +84,16 @@
   }
   .main-heading {
     font-size: 1.5rem;
+    text-align: justify;
+  }
+  .description p{
+    text-align: justify;
+    justify-content: center;
   }
   .stat-box {
     margin-bottom: 20px;
   }
+ .stat-box p::after{
+  display: none;
+ }
 }

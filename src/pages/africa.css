@@ -1,0 +1,99 @@
+.africa-section {
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-container {
+  text-align: right;
+  position: relative;
+  z-index: 2;
+  flex: 1 1 300px;
+}
+
+.africa-map {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.text-container {
+  position: relative;
+  z-index: 1;
+  margin-left: -80px;
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.speech-bubble {
+  background: #D9541A;
+  color: white;
+  padding: 40px 40px 60px 40px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid #D9541A;
+  border-right: 40px solid transparent;
+}
+
+.speech-bubble h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.speech-bubble .highlight {
+  font-weight: 700;
+}
+
+.speech-bubble p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .africa-section {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .text-container {
+    margin-left: 0;
+  }
+
+  .speech-bubble {
+    padding: 25px;
+  }
+
+  .speech-bubble::after {
+    display: none; /* ✅ Remove the bubble arrow */
+  }
+
+  .speech-bubble h2 {
+    font-size: 1.4rem;
+  }
+
+  .speech-bubble p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+}
+

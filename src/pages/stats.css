@@ -14,7 +14,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+  gap: 10px;
 }
 
 .project-card {
@@ -74,4 +74,58 @@
   padding: 10px 15px;
   font-size: 1.5rem;
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+/* Tablet (2 columns) */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-title {
+    font-size: 24px;
+    text-align: justify;
+  }
+
+  .category {
+    font-size: 0.9rem;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (1 column) */
+
+@media (max-width: 576px) {
+  .projects-grid {
+    width: 100%; /* or 90% for spacing */
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .projects-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .category {
+    writing-mode: horizontal-tb;
+    font-size: 0.8rem;
+  }
+
+  .corner-icon {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
 }

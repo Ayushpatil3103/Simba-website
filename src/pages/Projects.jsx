@@ -13,7 +13,7 @@ function Projects() {
       <div className="row align-items-center">
         {/* Left Content */}
         <div className="col-md-4 text-content">
-          <h2 className="section-title">No Compromise on Product Quality</h2>
+          <h2 className="section-title" >No Compromise on Product Quality</h2>
          
         </div>
 

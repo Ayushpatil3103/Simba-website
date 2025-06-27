@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css';
+import './africa.css';
 import africaMap from '../assets/simba-files/map-art.png';  // update with your correct path
 
 function AfricaSection() {
